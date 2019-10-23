@@ -1,0 +1,66 @@
+@import "init.scss";
+@import "_style.scss";
+// @import "_style2.scss";
+
+body {
+   display: flex;
+   flex-direction: row;
+}
+
+.main-display {
+   flex-grow: 1;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   margin: 30px 0px 30px 20px;
+}
+
+.box {
+   height: 50px;
+   width: 80px;
+   padding: 20px 10px 10px 18px;
+   border: 1px solid gray;
+   @include set-box-border-radius;
+   color: black;
+   justify-content: left;
+   @include set-box-font-family;
+}
+
+.boxBase {
+   @extend .box;
+   @include set-Base-color;
+}
+
+.boxImportant {
+   @extend .box;
+   @include set-Important-color;
+}
+
+.boxWarning {
+   @extend .box;
+   @include set-Warning-color;
+}
+
+.principal {
+   height: 20px;
+   width: 100px;
+   padding: 20px 0px 0px 0px;
+   color: black;
+   @include set-principal-font-family;
+}
+
+.secondary {
+   height: 20px;
+   width: 140px;
+   padding: 10px 0px 20px 0px;
+   color: black;
+   font-size: 20px;
+   @include set-secondary-font-family;
+}
+
+.boxShadow {
+   @extend .box;
+   @include set-box-shadow;
+}

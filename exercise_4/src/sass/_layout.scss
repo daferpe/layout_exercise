@@ -1,0 +1,55 @@
+@mixin base-grid-definition {
+    display: grid;
+}
+
+@mixin extra-large-resolution {
+    @include base-grid-definition();
+
+    grid-template-areas: 
+        "contentNav contentA"
+        "contentNav contentB";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50vh 50vh;
+}
+
+@mixin large-resolution {
+    @include base-grid-definition();
+
+    grid-template-areas: 
+        "contentNav contentA"
+        "contentNav contentB";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50vh 50vh;
+}
+
+@mixin medium-resolution {
+    @include base-grid-definition();
+    grid-template-areas:
+        "contentNav"
+        "contentA"
+        "contentB";
+    grid-template-columns: 3fr;
+    grid-template-rows: 20vh 40vh 40vh;
+
+    .contentNav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+     }
+ }
+
+ @mixin small-resolution {
+    @include base-grid-definition();
+    grid-template-areas:
+        "contentNav"
+        "contentA"
+        "contentB";
+    grid-template-columns: 3fr;
+    grid-template-rows: 4vh 48vh 48vh;
+
+    .contentNav {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+     }
+ }

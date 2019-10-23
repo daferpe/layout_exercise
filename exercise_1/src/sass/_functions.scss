@@ -1,0 +1,8 @@
+@function calculateLighten($base, $n) {
+    $perc: 10% * $n;
+    @return lighten( $base, $perc);
+ }
+ @function calculateDarken($base, $n) {
+    $perc: 10% * (5 - $n);
+    @return darken( $base, $perc);
+ }

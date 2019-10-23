@@ -1,0 +1,32 @@
+@mixin set-Base-color {
+    background-color: blue;
+}
+
+@mixin set-Important-color {
+    background-color: darkblue;
+}
+
+@mixin set-Warning-color {
+    background-color: turquoise;
+}
+
+@mixin set-box-font-family {
+    font-family: fantasy;
+}
+
+@mixin set-principal-font-family {
+    font-family: initial;
+}
+
+@mixin set-secondary-font-family {
+    font-family: sans-serif;
+}
+
+@mixin set-box-border-radius {
+    border-radius: 8px;
+}
+
+@mixin set-box-shadow {
+    box-shadow: 5px 5px .4em rgb(32, 31, 31)
+               , 10px 10px .4em gray;
+}

@@ -1,0 +1,32 @@
+@mixin set-Base-color {
+    background-color: red;
+}
+
+@mixin set-Important-color {
+    background-color: brown;
+}
+
+@mixin set-Warning-color {
+    background-color: pink;
+}
+
+@mixin set-box-font-family {
+    font-family: cursive;
+}
+
+@mixin set-principal-font-family {
+    font-family: sans-serif;
+}
+
+@mixin set-secondary-font-family {
+    font-family: serif;
+}
+
+@mixin set-box-border-radius {
+    border-radius: 3px;
+}
+
+@mixin set-box-shadow {
+    box-shadow: -5px 5px .4em rgb(32, 31, 31)
+               , -10px 10px .4em gray;
+}
